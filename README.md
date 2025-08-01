@@ -7,7 +7,7 @@ A CLI tool to install and configure the DreamFactory Server and DreamFactory MCP
 Run the installer using npx:
 
 ```bash
-npx create-df-mcp
+npx @dreamfactory/create-df-mcp
 ```
 
 Or if you'd like to contribute, you can follow these steps:
@@ -15,8 +15,8 @@ Or if you'd like to contribute, you can follow these steps:
 ```bash
 git clone git@github.com:dreamfactorysoftware/create-df-mcp.git
 cd create-df-mcp
-npm install
-npx create-df-mcp
+npx link
+create-df-mcp
 ```
 
 ## What it does
