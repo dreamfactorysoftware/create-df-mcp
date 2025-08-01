@@ -1,5 +1,5 @@
 {
-  "name": "create-df-mcp",
+  "name": "@dreamfactory/create-df-mcp",
   "version": "1.0.0",
   "description": "CLI tool to install and configure DreamFactory MCP for Claude Desktop",
   "bin": {
