@@ -1,0 +1,35 @@
+{
+  "name": "create-df-mcp",
+  "version": "1.0.0",
+  "description": "CLI tool to install and configure DreamFactory MCP for Claude Desktop",
+  "bin": {
+    "create-df-mcp": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dreamfactory",
+    "mcp",
+    "claude",
+    "cli",
+    "installer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ]
+}
