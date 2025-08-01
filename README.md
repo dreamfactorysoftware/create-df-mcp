@@ -10,6 +10,15 @@ Run the installer using npx:
 npx create-df-mcp
 ```
 
+Or if you'd like to contribute, you can follow these steps:
+
+```bash
+git clone git@github.com:dreamfactorysoftware/create-df-mcp.git
+cd create-df-mcp
+npm install
+npx create-df-mcp
+```
+
 ## What it does
 
 The installer will do the following:
