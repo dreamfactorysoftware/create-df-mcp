@@ -4,11 +4,13 @@ A CLI tool to install and configure the DreamFactory Server and DreamFactory MCP
 
 ## Installation
 
-Run the installer using npx:
+Run the installer using `npx`:
 
 ```bash
 npx @dreamfactory/create-df-mcp
 ```
+
+If you've never heard of the `npx` command, it is available on any machine that has npm (Node Package Manager) installed. `npx` is a convenient utility that can execute Node packages without having to install them.
 
 Or if you'd like to contribute, you can follow these steps:
 
@@ -23,7 +25,7 @@ create-df-mcp
 
 The installer will do the following:
 
-1. **Checks Docker installation** - Ensures Docker is installed and running
+1. **Checks Docker installation** - Ensures Docker is installed and running. If Docker is not installed and you are on macOS it will guide you through the installation process.
 2. **Sets up local DreamFactory** - Clones df-docker repository and runs DreamFactory locally
 3. **Provides local access** - DreamFactory runs at http://127.0.0.1 with default credentials
 4. **Manual API key setup** - You create your own API key in the local DreamFactory instance
