@@ -4,6 +4,8 @@ A CLI tool to install and configure the DreamFactory Server and DreamFactory MCP
 
 ## Installation
 
+This installer is only officially supported on macOS. It may work on Windows and probably works on Linux, but YMMV.
+
 Run the installer using `npx`:
 
 ```bash
@@ -21,6 +23,14 @@ npx link
 create-df-mcp
 ```
 
+### Removing DreamFactory and the MCP Server
+
+If you just wanted to give DreamFactory and the MCP server a quick spin, you can easily remove it from your environment:
+
+```bash
+npx @dreamfactory/create-df-mcp --uninstall
+```
+
 ## What it does
 
 The installer will do the following:
@@ -28,7 +38,7 @@ The installer will do the following:
 1. **Checks Docker installation** - Ensures Docker is installed and running. If Docker is not installed and you are on macOS it will guide you through the installation process.
 2. **Sets up local DreamFactory** - Clones df-docker repository and runs DreamFactory locally
 3. **Provides local access** - DreamFactory runs at http://127.0.0.1 with default credentials
-4. **Manual API key setup** - You create your own API key in the local DreamFactory instance
+4. **Example PostgreSQL DB configuration** - A fun PostgreSQL database is included with DreamFactory which you can optionally use for testing purposes. If you instead want to use your own datasource you can instead generate your own API in the local DreamFactory instance and give the API key to the installer.
 5. **Optionall installs local DreamFactory MCP Server** - Clones and configures DreamFactory MCP server
 6. **Optionally configures Claude Desktop** - Updates configuration to connect to your local databases
 
@@ -42,18 +52,7 @@ The installer will do the following:
 - Internet connection for cloning repositories
 
 ### Additional for local installation:
-- Docker Desktop installed and running
 - Available ports: 80 (web), 3306 (MySQL), 6379 (Redis)
-
-## Manual Usage
-
-If you've cloned this repository, you can also run:
-
-```bash
-npm install
-npm link
-create-df-mcp
-```
 
 ## Configuration
 

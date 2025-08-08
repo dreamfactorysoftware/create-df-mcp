@@ -2,18 +2,22 @@
 
 const { program } = require('commander');
 const chalk = require('chalk');
-const { install } = require('../lib/installer');
+const { install, uninstall } = require('../lib/installer');
 
 program
   .name('create-df-mcp')
   .description('Install and configure DreamFactory MCP for Claude Desktop')
   .version('1.0.0')
-  .action(async () => {
-
+  .option('--uninstall', 'uninstall DreamFactory and remove all components')
+  .action(async (options) => {
     try {
-      await install();
+      if (options.uninstall) {
+        await uninstall();
+      } else {
+        await install();
+      }
     } catch (error) {
-      console.error(chalk.red('\n❌ Installation failed:'), error.message);
+      console.error(chalk.red('\n❌ Operation failed:'), error.message);
       process.exit(1);
     }
   });
